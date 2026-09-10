@@ -17,10 +17,34 @@
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
+     <!-- css  -->
+      <link rel="stylesheet" href="style/style.css">
+
 </head>
 <body>
-    <h1 class=" text-center text-[200px]"> hello i'm here</h1>
-    <p> now I'm going to build an website named english janala</P>
-    
+    <div class="navbar bg-base-100 shadow-sm">
+  <div class="navbar-start">
+    <div class="dropdown">
+      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+        <svg aria-label="Menu" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+      </div>
+    </div>
+    <a class=" flex items-center gap-1 ">
+     <span class="text-lg font-bold">English</span>
+     <img src="assets/logo.png" alt="">
+     <span class="font-bangla font-semibold">জানালা</span>
+    </a>
+  </div>
+  <div class="navbar-end hidden lg:flex">
+    <ul class="menu menu-horizontal px-1 flex gap-2">
+
+      <button class="btn btn-outline btn-primary">FAQ</button>
+      <button class="btn btn-outline btn-primary">Learn</button>
+      <button class="btn btn-outline btn-primary">Logout</button>
+
+    </ul>
+  </div>
+</div>
+
 </body>
 </html>
