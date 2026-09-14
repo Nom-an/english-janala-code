@@ -21,7 +21,16 @@ const displayWords= (words)=>{
     words.forEach((word)=>{
         const levelDiv = document.createElement('div');
         levelDiv.innerHTML = ` 
-        <p> hello </p>
+          <div class="bg-white py-5 px-5 rounded-md text-center">
+    <h2 class="font-bold text-xl">${word.word}</h2>
+    <p>${word.meaning} / ${word.pronunciation}</p>
+    <div class="flex  justify-between items-center">
+      <button><i class="fa-solid fa-circle-info"></i></button>
+      <button><i class="fa-solid fa-volume"></i></button>
+    </div>
+
+  </div>
+        
         
         `
         levelContainer.append(levelDiv);
