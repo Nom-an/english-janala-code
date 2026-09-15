@@ -60,7 +60,8 @@ const displayWords= (words)=>{
 
 const removeActive= ()=>{
     const lessonButton = document.querySelectorAll('.lesson-button');
-    lessonButton.forEach(btn=>btn.classList.remove('active'))
+    lessonButton.forEach(btn=>btn.classList.remove('active'));
+    console.log('remove btn');
 
 
 }
@@ -75,7 +76,7 @@ const display = (lesson)=>{
         const divBtn = document.createElement('div');
         divBtn.innerHTML = `
                <button id="lesson-btn${les.level_no}" onclick="loadLevelWord(${les.level_no})" class="btn btn-outline btn-primary ">
-                <span><i class="fa-solid fa-book-open lesson-button "></i></span>Lesson - ${les.level_no}</button>
+               <span><i class="fa-solid fa-book-open lesson-button "></i></span>Lesson - ${les.level_no}</button>
         
         `
 
